@@ -1,0 +1,6 @@
+[
+{
+  "directory": "e:\\ML_Prj\\CS2\\CS2_Autoaim\\1getGraphData\\C_OpenCV",
+  "arguments": ["E:\\MinGW\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe", "-c", "-std=c++17", "-IE:\\OpenCV\\opencv\\build\\x64\\MinGW\\install\\include", "-IE:\\OpenCV\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2", "-D_DEBUG", "-D_UNICODE", "-DUNICODE", "-fexceptions", "-o", "build\\.objs\\displaytest\\windows\\x64\\release\\displaytest.cpp.obj", "displaytest.cpp"],
+  "file": "displaytest.cpp"
+}]

@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "xmake",
+      "request": "launch",
+      "name": "Launch",
+      "target": "displaytest",
+      "cwd": "",
+      "stopAtEntry": true
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "e:/ML_Prj/CS2/CS2_Autoaim/1getGraphData/C_OpenCV",
+      "program": "e:/ML_Prj/CS2/CS2_Autoaim/1getGraphData/C_OpenCV/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

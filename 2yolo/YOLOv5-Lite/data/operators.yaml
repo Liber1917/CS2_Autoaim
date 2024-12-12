@@ -1,0 +1,5 @@
+train: data/CS2_dataset/train/images
+val: data/CS2_dataset/val/images
+nc: 2
+names: ['T', 'CT']
+

@@ -1,0 +1,4 @@
+e:
+cd E:\ML_Prj\CS2\CS2_Autoaim\2yolo\yolov5-7.0-full4train
+conda activate E:\ML_Prj\CS2\YOLO_FPS\env
+python train.py --cache --rect --image-weights

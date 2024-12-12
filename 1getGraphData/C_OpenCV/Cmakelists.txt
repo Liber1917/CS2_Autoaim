@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.22)
+project(OpenCV_Test1)
+
+# 显式指定 C 和 C++ 编译器
+set(CMAKE_C_COMPILER E:/MinGW/mingw64/bin/gcc.exe)
+set(CMAKE_CXX_COMPILER E:/MinGW/mingw64/bin/g++.exe)
+
+# 设置 C++ 标准
+set(CMAKE_CXX_STANDARD 14)
+
+# 添加可执行文件
+add_executable(OpenCV_Test1 displaytest.cpp)
+add_executable(OpenCV_Test1 screenshot.cpp)
+
+# 设置 OpenCV 目录
+set(OpenCV_DIR E:/OpenCV/opencv/build/x64/MinGW/install)
+
+# 搜索 OpenCV 库
+find_package(OpenCV REQUIRED)
+
+# 如果 OpenCV 被找到，设置编译选项和包含目录
+if(OpenCV_FOUND)
+    # 设置编译选项
+    target_compile_options(OpenCV_Test1 PRIVATE ${OpenCV_CXX_FLAGS})
+
+    # 包含 OpenCV 头文件目录
+    target_include_directories(OpenCV_Test1 PRIVATE ${OpenCV_INCLUDE_DIRS})
+    target_include_directories(OpenCV_Test1 PRIVATE E:/ML_Prj/CS2/CS2_Autoaim/1getGraphData/C_OpenCV/include)  # 包含名为 include 的目录
+
+
+    # 链接 OpenCV 库文件
+    target_link_libraries(OpenCV_Test1 PRIVATE ${OpenCV_LIBS})
+else()
+    message(WARNING "OpenCV not found")
+endif()
+
+# 添加额外的依赖，如果有的话
+# target_link_libraries(OpenCV_Test1 PRIVATE some_other_library)

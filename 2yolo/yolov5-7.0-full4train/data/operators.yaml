@@ -1,0 +1,10 @@
+train: data/CS2_dataset/train/images
+val: data/CS2_dataset/val/images
+nc: 2
+names: ['T', 'CT']
+
+img_size:
+  - height: 1660
+    width: 2560
+  - height: 1040
+    width: 1040
